@@ -1,3 +1,51 @@
 .App-title {
   font-size: 2em;
 }
+
+.invalid {
+  width: 40%;
+  border: 1px solid red;
+  font-weight: bold;
+  padding: 7px;
+}
+
+.success {
+  width: 40%;
+  border: 1px solid green;
+  font-weight: bold;
+  padding: 7px;
+}
+
+.checkbox {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid green;
+    overflow: auto;
+    width: fit-content
+}
+
+.checkbox label {
+    float:left;
+}
+
+.checkbox label span {
+    text-align: center;
+    display: block;
+    padding: 3px 0px;
+}
+
+.checkbox label input {
+    position:absolute;
+    top:-20px;
+}
+
+.filled {
+  background-color: green;
+  color: #fff
+}
+
+.choices {
+  display: flex;
+  flex-flow: row nowrap;
+}

@@ -1,9 +1,9 @@
 import Choice from "./Choice";
 
-const Question = ({ question }) => (
+const Question = ({ question, handleChange, selected}) => (
   <div>
     <p>{question.text}</p>
-    <div className="choices">
+    <div className="choices" onChange={handleChange}>
       {question.choices.map((choice) => {
         return (
           <Choice
@@ -11,6 +11,7 @@ const Question = ({ question }) => (
             value={choice.name}
             label={choice.label}
             key={choice.name}
+            checked={selected.includes(choice.name)}
           />
         );
       })}
