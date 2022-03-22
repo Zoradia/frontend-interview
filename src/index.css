@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+
+p {
+  margin-top: 2em;
+  font-weight: bold;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  font-size: 1.3em;
+  padding: 8px 14px;
+}
+
+label span {
+  margin-right: 10px;
+}
